@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #FF4081, #9C27B0, #FFEB3B);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            background-color: #673AB7;
+            color: white;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+        button:hover {
+            background-color: #5E35B1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <h1>Chegamos na pagina 2!</h1>
+            <p>Nesse rolê eu prometo piadas ruins, humor duvidoso, comidas boas, música agradável e muito mais</p>
+            <p>Vamos pra algumas opções!</p>
+            <button id="nextButton">Próximo</button>
+        </div>
+
+        <script>
+            document.getElementById("nextButton2").onclick = function () {
+                location.href = "home_3.html"; // Altere para a URL da sua próxima página
+            };
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #ff4081, #9c27b0, #ffff8d);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+button {
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#naoButton {
+    background-color: gray;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Então, Helo!</h1>
+        <p>Aceitas embarcar nessa aventura?</p>
+        <button id="simButton">SIM</button>
+        <button id="naoButton">NÃO</button>
+    </div>
+    <script>
+    document.getElementById("simButton").onclick = function () {
+        location.href = "confirmation.html";
+    };
+
+    document.getElementById("naoButton").onclick = function () {
+        moveButton();
+    };
+
+    function moveButton() {
+        var button = document.getElementById("naoButton");
+        var newPositionTop = Math.random() * (window.innerHeight - button.clientHeight);
+        var newPositionLeft = Math.random() * (window.innerWidth - button.clientWidth);
+        button.style.position = 'absolute'; // Adicione esta linha
+        button.style.top = newPositionTop + "px";
+        button.style.left = newPositionLeft + "px";
+    }
+
+    </script>
+</body>
+</html>
